@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Price Tags</title>
+  
+ 
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+html {
+    background: url(http://upload.robinbrons.com/u/1362757499.png);
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.event {
+  width: 650px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  margin: 50px;
+}
+.event:before {
+  content: '';
+  display: block;
+  width: 630px;
+  height: 70px;
+  background: #fff;
+  border: 1px solid #CCC;
+  border-radius: 2px; 
+  transform: rotate(2deg);
+  position: relative;
+  top: 12px;
+  left: 2px;
+  z-index: -1;
+}
+.event:after {
+  content: '';
+  display: block;
+  width: 630px;
+  height: 75px;
+  background: #fff;
+  border: 1px solid #CCC;
+  border-radius: 2px; 
+  transform: rotate(-2deg);
+  position: relative;
+  top: -136px;
+  z-index: -2;  
+}
+.event > span {
+  display: block;
+  width: 30px;
+  background: #232323;  
+  position: relative;
+  top: -55px;
+  left: -15px;
+  
+  /* Text */
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 7px;
+  text-align: center;
+}
+.event > .info {
+  display: inline-block;
+  position: relative;
+  top: -75px;
+  left: 40px;
+  
+  /* Text */
+  color: #232323;
+  font-weight: 600;
+  line-height: 25px;
+}
+.event > .info:first-line {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 10px 0 0 0;
+  font-weight: 700;
+}
+.event > .price {
+  display: inline-block;
+  width: 60px;
+  position: relative;
+  top: -85px;
+  left: 80px; 
+  
+  /* Text */
+  color: #E35354;
+  text-align: left;
+  font-weight: 700;
+}
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="event">
+  <span>#001</span>
+  <div class="info">
+    March 26, 2018 <br />
+    Mia Lee
+  </div>
+  <div class="price" style="width: 320px; ">
+    编程题目的分值分为及格（60），一般（80），优秀（100）三等。
+  </div>
+</div>
+  
+  <div class="event">
+  <span>#002</span>
+  <div class="info">
+    March 26, 2018 <br />
+    Mia Lee
+  </div>
+  <div class="price" style="width: 454px">
+    编程得分标准为未满足时间和内存要求得分60；如满足其中任意一项则得分80；如所有要求满足，则得分100。
+
+  </div>
+</div>
+  
+  <div class="event" >
+  <span>#003</span>
+  <div class="info">
+    March 26, 2018 <br />
+    Mia Lee
+  </div>
+  <div class="price" style="width: 340px; ">
+  排行榜积分标准为完成题目（即及格线以上）即可得1分，通过题数越高者排名越高。
+  </div>
+</div>
+  
+  
+
+</body>
+
+</html>
